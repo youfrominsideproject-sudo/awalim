@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101828">
+<meta name="description" content="عوالم: تعليم وترفيه، علوم وتقنية وذكاء اصطناعي، وكوميديا تفاعلية من جمعية الروبوتات التايهة.">
+<title>عوالم | المعرفة والضحكة والتجربة</title>
+<style>
+:root{--bg:#0b1020;--panel:#151d32;--text:#f4f7ff;--muted:#b8c4d9;--mint:#76e0c2;--line:#2b3854}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#1b3150,#0b1020 70%);color:var(--text);font-family:system-ui,Tahoma,Arial;line-height:1.7}
+.wrap{max-width:1050px;margin:auto;padding:18px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brand{font-size:1.7rem;font-weight:900}
+.brand span{color:var(--mint)}
+nav,.actions,.choices{display:flex;gap:9px;flex-wrap:wrap}
+a,button{color:var(--text);text-decoration:none;border:1px solid var(--line);background:#1b2740;padding:10px 14px;border-radius:12px;font:inherit;cursor:pointer}
+.hero{padding:55px 0 35px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.2;margin:10px 0}
+.hero p,.muted{color:var(--muted)}
+.eyebrow{color:var(--mint);font-weight:bold}
+section{padding:25px 0;scroll-margin-top:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card,.feature,.demo-box{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:17px}
+.art{font-size:3rem;text-align:center;padding:12px}
+.card h3{margin:4px 0}
+.card p{color:var(--muted)}
+.primary{background:var(--mint);color:#08251e;font-weight:bold}
+.quote{background:#211b31;border-right:3px solid #f3a6d6;padding:10px;margin:10px 0;border-radius:8px}
+.demo{display:none;margin-top:15px}
+.demo.active{display:block}
+.result{background:#182641;padding:13px;border-radius:12px;margin-top:12px;min-height:45px}
+.choice{flex:1;min-width:130px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:20px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">عوالم<span>.</span></div>
+<nav>
+<a href="#worlds">المشروعان</a>
+<a href="#learn">التعليم</a>
+<a href="#robots">الروبوتات</a>
+<a href="#games">الألعاب</a>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="eyebrow">معرفة تتبسط… وضحكة بتفكّر… وتجربة تشارك فيها</div>
+<h1>أهلًا بك في <span style="color:var(--mint)">عوالم</span></h1>
+<p>موقع واحد يجمع مشروعين مختلفين في الروح، متفقين في حب الاستكشاف: محتوى تعليمي وترفيهي، وكوميديا عن البشر والذكاء الاصطناعي، مع ألعاب تفاعلية تتغير حسب اختياراتك.</p>
+<div class="actions">
+<a class="primary" href="#worlds">استكشف عوالمنا ↓</a>
+<a href="#games">جرّب لعبة تفاعلية 🎮</a>
+</div>
+</section>
+
+<section id="worlds">
+<h2>عوالمنا</h2>
+<p class="muted">مظلة واحدة، وهويتان مستقلتان.</p>
+<div class="grid">
+<article class="card">
+<div class="art">🔬</div>
+<h3>عوالم | تعليم وترفيه</h3>
+<p>علوم، طب، تكنولوجيا، ذكاء اصطناعي، اكتشافات وتجارب مبسطة تساعدك تفهم الفكرة بدل ما تحفظها.</p>
+<a href="#learn">ادخل العالم</a>
+</article>
+<article class="card">
+<div class="art">🤖</div>
+<h3>جمعية الروبوتات التايهة</h3>
+<p>حوارات ومواقف كوميدية عن ذكاء اصطناعي ساعات بيحل المشكلة، وساعات بيبقى هو المشكلة.</p>
+<a href="#robots">ادخل الجمعية</a>
+</article>
+<article class="card">
+<div class="art">🎮</div>
+<h3>العب واختار</h3>
+<p>مواقف قصيرة وقرارات لها نتائج مختلفة. دي بداية مساحة الألعاب.</p>
+<a href="#games">ابدأ اللعب</a>
+</article>
+</div>
+</section>
+
+<section id="learn">
+<h2>🔬 عوالم | تعليم وترفيه</h2>
+<p class="muted">معلومة بسيطة، سؤال يفتح باب، وتجربة صغيرة.</p>
+<div class="grid">
+<article class="card"><div class="art">🧠</div><h3>الذكاء الاصطناعي</h3><p>إزاي الأدوات الذكية بتشتغل؟ وإمتى نثق في إجابتها وإمتى نراجعها؟</p><button data-info="ai">افتح بطاقة المعرفة</button></article>
+<article class="card"><div class="art">🌌</div><h3>العلوم والكون</h3><p>أسئلة عن الفضاء والطبيعة والفيزياء بلغة مفهومة.</p><button data-info="science">افتح بطاقة المعرفة</button></article>
+<article class="card"><div class="art">🩺</div><h3>الطب والجسم</h3><p>معلومات صحية للتثقيف العام مع توضيح حدود المعلومة.</p><button data-info="health">افتح بطاقة المعرفة</button></article>
+</div>
+<div class="demo" id="knowledge"><div class="demo-box"><button id="closeKnowledge">إغلاق</button><div id="knowledgeText"></div></div></div>
+</section>
+
+<section id="robots">
+<h2>🤖 جمعية الروبوتات التايهة</h2>
+<p class="muted">أحيانًا المشكلة مش إن الروبوت مش فاهم… المشكلة إنه واثق زيادة عن اللزوم.</p>
+<div class="feature">
+<h3>اجتماع طارئ: مين المسؤول عن اللخبطة؟</h3>
+<div class="quote"><b>الإنسان:</b> طلبت منك تختصر الكلام.</div>
+<div class="quote"><b>الروبوت:</b> حاضر. إليك ملخصًا من 47 نقطة، مع مقدمة تاريخية.</div>
+<div class="quote"><b>الإنسان:</b> إنت كده مطوّلتش؟</div>
+<div class="quote"><b>الروبوت:</b> لا، أنا بس اختصرت التفاصيل غير الضرورية… واحتفظت بالباقي كله.</div>
+<p class="muted">دي عينة تجريبية للموقع؛ المحتوى النهائي هيتبني من أفكار المشروع ونبرة صفحته.</p>
+</div>
+</section>
+
+<section id="games">
+<h2>🎮 الألعاب التفاعلية</h2>
+<p class="muted">اختيارك يغيّر اللي هيحصل بعده.</p>
+<div class="grid">
+<article class="card"><div class="art">🛺</div><h3>آخر مشوار</h3><p>إنت سواق توك توك، والراكب مصمم إنه حافظ الطريق. هتعمل إيه؟</p><button class="primary" data-game="road">ابدأ اللعبة</button></article>
+<article class="card"><div class="art">🤖</div><h3>اختبر الروبوت</h3><p>هل هتقدر تطلع من الحوار بإجابة مفيدة من غير دوامة؟</p><button data-game="bot">ابدأ التحدي</button></article>
+</div>
+<div class="demo" id="gameArea"><div class="demo-box"><button id="closeGame">رجوع</button><div id="gameContent"></div></div></div>
+</section>
+</main>
+
+<footer>عوالم — نسخة أولية قابلة للتطوير. لا تجمع بيانات ولا تحتاج تسجيل دخول.</footer>
+</div>
+
+<script>
+const knowledge={
+ai:"<h3>الذكاء الاصطناعي: قاعدة ذهبية</h3><p>النموذج ممكن يكتب إجابة مقنعة وهي غلط. راجع الأرقام والمصادر، خصوصًا في الطب والمال والأخبار الحديثة.</p>",
+science:"<h3>العلوم: فرّق بين النموذج والواقع</h3><p>التجربة المبسطة بتساعدنا نفهم، لكنها مش دايمًا بتمثل كل تفاصيل العالم الحقيقي.</p>",
+health:"<h3>الطب: معلومة عامة مش تشخيص</h3><p>المحتوى الطبي الجيد يوضح مصدر المعلومة وحدودها، وما يستبدلش تقييم الطبيب.</p>"
+};
+document.querySelectorAll("[data-info]").forEach(b=>b.addEventListener("click",()=>{
+document.getElementById("knowledgeText").innerHTML=knowledge[b.dataset.info];
+document.getElementById("knowledge").classList.add("active");
+}));
+document.getElementById("closeKnowledge").onclick=()=>document.getElementById("knowledge").classList.remove("active");
+
+const games={
+road:[
+{q:"الراكب قالك: لف من هنا، أنا حافظ الطريق… والطريق ترابي ومفيش حد فيه. تعمل إيه؟",o:["أسمع كلامه","أسأله حافظه منين","أراجع الخريطة"],r:["بعد 20 دقيقة وصلتوا بيت جدّه القديم!","قالك: كنت بجربك… وطلب خصم!","الخريطة قالت: راجع العلامات بنفسك."]},
+{q:"وصلت لافتة مكتوب عليها ممنوع المرور إلا للمصرّين. تختار إيه؟",o:["أرجع","أكمل بحذر","أقرأها تاني"],r:["قرار حكيم؛ مش كل طريق يستاهل تكمل فيه.","لقيت نفسك في حارة بتحتفل بافتتاح كشك كشري.","طلعت المصرّح لهم… والنحو أنقذ يومك."]},
+{q:"الراكب بيقول: أنا عارف اختصار. إيه خطوتك؟",o:["أطلب دليل","أوافق فورًا","أخليه هو يسوق"],r:["طلبت منه علامة واضحة؛ أخيرًا وصلتوا.","الاختصار طلع أطول من الطريق الأصلي.","رفض وقالك: أنا حافظ الطريق مش السواقة!"]}
+],
+bot:[
+{q:"الروبوت رد على سؤالك بمقال طويل. هتقول له إيه؟",o:["اختصر في 3 نقاط","هات المصدر","جرّب من الأول"],r:["اختصر فعلًا: الفكرة، الدليل، والحدود. إنجاز تاريخي!","جاب مصدرًا؛ تراجعه وتتأكد إنه بيدعم الكلام.","قالك: إعادة التشغيل مش هتصلح صياغة السؤال يا فندم."]},
+{q:"الروبوت واثق من معلومة غريبة. تتصرف إزاي؟",o:["أصدقه","أطلب مصدرًا وأراجع","أسأله نفس السؤال تاني"],r:["الروبوت ابتسم رقميًا… والمعلومة طلعت غلط.","ممتاز: الثقة مش دليل، والمصدر محتاج مراجعة برضه.","غيّر الإجابة بثقة أكبر. ما اتحلتش!"]}
+]
+};
+let gameType="road",step=0;
+function renderGame(){
+const s=games[gameType][step%games[gameType].length];
+const c=document.getElementById("gameContent");
+c.innerHTML="<h3>"+(gameType==="road"?"🛺 آخر مشوار":"🤖 اختبار الروبوت")+"</h3><p>"+s.q+"</p><div class='choices'>"+s.o.map((x,i)=>"<button class='choice' data-pick='"+i+"'>"+x+"</button>").join("")+"</div><div class='result' id='gameResult'>اختار قرارك عشان تشوف النتيجة.</div><div class='choices'><button id='nextStep'>موقف جديد ↻</button></div>";
+c.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{c.querySelector("#gameResult").textContent=s.r[Number(b.dataset.pick)];});
+c.querySelector("#nextStep").onclick=()=>{step++;renderGame();};
+}
+document.querySelectorAll("[data-game]").forEach(b=>b.addEventListener("click",()=>{
+gameType=b.dataset.game;step=0;renderGame();
+document.getElementById("gameArea").classList.add("active");
+}));
+document.getElementById("closeGame").onclick=()=>document.getElementById("gameArea").classList.remove("active");
+</script>
+</body>
+</html>
