@@ -122,7 +122,21 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:20px 0;color:var
 <footer>عوالم — نسخة أولية قابلة للتطوير. لا تجمع بيانات ولا تحتاج تسجيل دخول.</footer>
 </div>
 
-<script>
+<script>window.addEventListener("error", function (e) {
+  let box = document.getElementById("errorBox");
+
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "errorBox";
+    box.style.cssText =
+      "position:fixed;bottom:10px;left:10px;right:10px;background:#7b1e1e;color:white;padding:12px;z-index:99999;border-radius:8px;direction:rtl;font-size:14px";
+    document.body.appendChild(box);
+  }
+
+  box.textContent = "خطأ في الموقع: " + e.message;
+});
+
+console.log("AWALIM SCRIPT LOADED");
 const knowledge={
 ai:"<h3>الذكاء الاصطناعي: قاعدة ذهبية</h3><p>النموذج ممكن يكتب إجابة مقنعة وهي غلط. راجع الأرقام والمصادر، خصوصًا في الطب والمال والأخبار الحديثة.</p>",
 science:"<h3>العلوم: فرّق بين النموذج والواقع</h3><p>التجربة المبسطة بتساعدنا نفهم، لكنها مش دايمًا بتمثل كل تفاصيل العالم الحقيقي.</p>",
